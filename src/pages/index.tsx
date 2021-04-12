@@ -45,7 +45,6 @@ export default function Conf() {
 export const getStaticProps: GetStaticProps<PageProps> = async () => {
   const type = 'homepage';
   const settings = await getSettings(type);
-  console.log({ settings });
 
   return {
     props: {

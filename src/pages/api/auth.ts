@@ -16,11 +16,10 @@
 
 import { NextApiRequest, NextApiResponse } from 'next';
 import { COOKIE } from '@lib/constants';
-import { getGuest } from '@lib/cms-api';
+import redis from '@lib/redis';
 
 export default async function auth(req: NextApiRequest, res: NextApiResponse) {
   const id = req.cookies[COOKIE];
-
   if (!id) {
     return res.status(401).json({
       error: {
@@ -30,16 +29,17 @@ export default async function auth(req: NextApiRequest, res: NextApiResponse) {
     });
   }
 
-  const token = process.env.GUEST_ADMIN_TOKEN as string;
-  const guest = await getGuest('uid', id, token);
+  if (redis) {
+    const ticketNumberString = await redis.hget(`id:${id}`, 'ticketNumber');
 
-  if (!guest) {
-    return res.status(401).json({
-      error: {
-        code: 'not_registered',
-        message: 'This user is not registered'
-      }
-    });
+    if (!ticketNumberString) {
+      return res.status(401).json({
+        error: {
+          code: 'not_registered',
+          message: 'This user is not registered'
+        }
+      });
+    }
   }
 
   return res.status(200).json({ loggedIn: true });

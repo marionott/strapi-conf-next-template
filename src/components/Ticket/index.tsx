@@ -88,7 +88,7 @@ export default function Ticket({ username, name, ticketNumber, sharePage }: Prop
           <p className={styles.description}>
             {sharePage ? (
               <>
-                Join {name && 'them '} on {ctx?.eventDate?.standard ?? DATE}.
+                Join {name ?? 'them '} on {ctx?.eventDate?.standard ?? DATE}.
               </>
             ) : (
               <>Generate a unique ticket image with your GitHub profile.</>

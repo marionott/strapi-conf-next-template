@@ -43,7 +43,7 @@ export default function Speakers({ speakers, settings }: Props) {
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const type = 'speakers';
   const [speakers, settings] = await Promise.all([getAllSpeakers(), getSettings(type)]);
-  console.log({ settings });
+
   return {
     props: {
       speakers,

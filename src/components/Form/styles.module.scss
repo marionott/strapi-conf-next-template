@@ -21,7 +21,6 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 24px;
-  opacity: 0;
 
   &.sharePage {
     @include breakpoint($lg) {

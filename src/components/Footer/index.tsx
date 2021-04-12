@@ -37,11 +37,6 @@ export default function Footer() {
               <div className={styles.footerSeparator} />
             </Fragment>
           ))}
-          <p className={styles.footerParagraph}>
-            <Link className={styles.footerLink} href="/privacy">
-              Privacy
-            </Link>
-          </p>
         </div>
       </div>
     </footer>

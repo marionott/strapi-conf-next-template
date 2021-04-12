@@ -1,4 +1,4 @@
-export { getPrivacy, getAllPerks, getAllJobs } from './singles';
+export { getAllJobs } from './singles';
 export { getAllSpeakers, getSpeaker } from './speakers';
 export { getAllStages } from './stages';
 export { getAllSponsors, getSponsor } from './sponsors';

@@ -13,14 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Job, Perk, Privacy, Sponsor, Stage, Speaker, Settings, Global } from '@lib/types';
+import { Job, Sponsor, Stage, Speaker, Settings, Global } from '@lib/types';
 import * as strapiApi from './cms-provider';
 
 const cmsApi = strapiApi;
-
-export async function getPrivacy(): Promise<Privacy> {
-  return cmsApi.getPrivacy();
-}
 
 export async function getAllSpeakers(): Promise<Speaker[]> {
   return cmsApi.getAllSpeakers();
@@ -44,10 +40,6 @@ export async function getSponsor(slug: string): Promise<Sponsor> {
 
 export async function getAllJobs(): Promise<Job[]> {
   return cmsApi.getAllJobs();
-}
-
-export async function getAllPerks(): Promise<Perk[]> {
-  return cmsApi.getAllPerks();
 }
 
 export async function getGlobal(): Promise<Global> {

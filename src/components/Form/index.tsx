@@ -21,7 +21,6 @@ import useEmailQueryParam from '@hooks/useEmailQueryParam';
 import { register } from '@lib/user-api';
 import useConfData from '@hooks/useConfData';
 import LearnMore from '@components/LearnMore';
-import RecaptchaLabel from '@components/RecaptchaLabel';
 import styleUtils from '@styles/utils.module.scss';
 import styles from './styles.module.scss';
 import classnames from 'classnames/bind';
@@ -163,7 +162,6 @@ export default function Form({ className, sharePage }: Props) {
           </button>
         </div>
         <LearnMore />
-        <RecaptchaLabel />
       </form>
     </>
   );

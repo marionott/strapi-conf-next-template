@@ -55,8 +55,6 @@
 
 .imageWrapper {
   max-width: 350px;
-  perspective: 1000;
-  opacity: 0;
 
   @include breakpoint($sm) {
     min-width: 300px;
