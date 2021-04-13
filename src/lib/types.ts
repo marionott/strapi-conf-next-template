@@ -159,7 +159,7 @@ export type Settings = {
 
 export type Page = {
   id: number;
-  type: 'schedule' | 'stages' | 'sponsors' | 'jobs' | 'speakers' | 'perks' | 'workshops';
+  type: 'homepage' | 'schedule' | 'stages' | 'sponsors' | 'jobs' | 'speakers';
   settings: Settings;
 };
 

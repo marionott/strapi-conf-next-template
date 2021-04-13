@@ -33,21 +33,8 @@ export const EDITO = {
     metaDescription:
       'A 1 day conference taking place on April 22nd, 2021 from 8 am to 3 pm PST for the Strapi Community to learn, contribute, and collaborate on the future of the leading open source Headless CMS.'
   },
-  cookie: {
-    metaTitle: 'StrapiConf - user conference for the Strapi community',
-    metaDescription:
-      'A 1 day conference taking place on April 22nd, 2021 from 8 am to 3 pm PST for the Strapi Community to learn, contribute, and collaborate on the future of the leading open source Headless CMS.'
-  },
   jobs: {
     title: 'Career Fair',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    metaTitle: 'Speaker Page',
-    metaDescription:
-      'A 1 day conference taking place on April 22nd, 2021 from 8 am to 3 pm PST for the Strapi Community to learn, contribute, and collaborate on the future of the leading open source Headless CMS.'
-  },
-  perks: {
-    title: 'Attendee Perks',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     metaTitle: 'Speaker Page',
@@ -88,14 +75,6 @@ export const EDITO = {
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     metaTitle: 'Speaker Page',
-    metaDescription:
-      'A 1 day conference taking place on April 22nd, 2021 from 8 am to 3 pm PST for the Strapi Community to learn, contribute, and collaborate on the future of the leading open source Headless CMS.'
-  },
-  workshops: {
-    title: 'Strapi Conf',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    metaTitle: 'StrapiConf - user conference for the Strapi community',
     metaDescription:
       'A 1 day conference taking place on April 22nd, 2021 from 8 am to 3 pm PST for the Strapi Community to learn, contribute, and collaborate on the future of the leading open source Headless CMS.'
   },
